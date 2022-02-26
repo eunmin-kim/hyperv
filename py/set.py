@@ -12,11 +12,12 @@ class cmd:
         self.check = 'bcedit'
         self.vb = 'bcdedit /set hypervisorlaunchtype off'
         self.docker = 'bcdedit /set hypervisorlaunchtype auto'
-    
-    def mode_checker(self):
-        shell.ShellExecuteEx(
-                lpVerb='runas', lpFile='cmd.exe', lpParameters='/c '+self.check)
 
+    def mode_checker(self):
+        result = shell.ShellExecuteEx(
+            lpVerb='runas', lpFile='cmd.exe', lpParameters='/c '+self.check)
+        print(result)
+        sys.stdout.flush()
     def worker(self):
         if self.value == '0':
             shell.ShellExecuteEx(
@@ -28,6 +29,7 @@ class cmd:
              lpVerb='runas', lpFile='cmd.exe', lpParameters='/c '+self.docker)
          print("Docker Mode Set")
          sys.stdout.flush()
+
 
 if __name__ == '__main__':
     cmds = cmd(sys.argv[1])
