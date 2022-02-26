@@ -29,6 +29,3 @@ class cmd:
 if __name__ == '__main__':
     cmds = cmd(sys.argv[1])
     cmds.worker()
-    # print(sys.argv[1])
-    # print('dd')
-    # cmds.worker()
