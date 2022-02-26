@@ -1,0 +1,25 @@
+button {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.vb_mode {
+    
+}
+ button {
+    font-size: 14px;
+    background-color: gray;
+    border-radius: 20px;
+    padding: 4px;
+    color: white;
+    width: 125px;
+    cursor: pointer;
+}
+.container {
+    padding: 5px;
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin: 0 auto;
+}
