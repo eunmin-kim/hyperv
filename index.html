@@ -9,21 +9,29 @@
     <title>Hyper-V 설정 프로그램</title>
 </head>
 <body>
-    <div class="container">
-        <div class="vb_mode">
-            <h3>Virtual Box Mode</h3>
-            <button onclick="setVB();" >설정하기</button>
-            <p></p>
+    <section class="main">
+        <div class="container">
+            <div class="vb_mode">
+                <h3>Virtual Box Mode</h3>
+                <button onclick="setVB();" >설정하기</button>
+                <p></p>
+            </div>
+            <div class="docker_mode">
+                <h3>Docker Mode</h3>
+                <button onclick="setDocker();" >설정하기</button>
+                <p></p>
+            </div>
         </div>
-        <div class="docker_mode">
-            <h3>Docker Mode</h3>
-            <button onclick="setDocker();" >설정하기</button>
-            <p></p>
-        </div>
-    </div>
+    </section>
     <section class="status">
         <div class="status_pannel">
-
+            <div class="status_title">
+                <h3>현재 상태</h3>
+                <span class="docker_mode">Docker Mode</span>
+            </div>
+            <div class="status_detail">
+                hypvervisorlaunchtype Auto
+            </div>
         </div>
     </section>
 </body>

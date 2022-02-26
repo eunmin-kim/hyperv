@@ -16,10 +16,41 @@ button {
     width: 125px;
     cursor: pointer;
 }
+.main {
+    width: 100%;
+}
 .container {
     padding: 5px;
     display: flex;
     width: 70%;
     justify-content: space-around;
     margin: 0 auto;
+}
+
+section.status {
+    width: 100%;
+}
+.status_pannel {
+    width:70%;
+    margin: -10px auto;
+}
+.status_title {
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+.status_title h3 {
+    width:100px;
+}
+.docker_mode {
+    font-weight: bold;
+    color: RGB(36, 150, 237);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.vb_mode {
+    font-weight: bold;
+    color: #193963;
+    font-size: 18px;
+    margin-bottom: 5px;
 }

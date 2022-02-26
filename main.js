@@ -4,8 +4,8 @@ require('dotenv').config();
 
 const createWindow = () => {
   const win = new BrowserWindow({
-    width: 600,
-    height: 200,
+    width: 550,
+    height: 300,
     resizable: false,
     webPreferences: {
       nodeIntegration: true,
