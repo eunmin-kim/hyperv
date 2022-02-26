@@ -54,3 +54,8 @@ section.status {
     font-size: 18px;
     margin-bottom: 5px;
 }
+
+.main p {
+    text-align: center;
+    margin: 0 auto;
+}

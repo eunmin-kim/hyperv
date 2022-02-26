@@ -5,7 +5,7 @@ require('dotenv').config();
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 550,
-    height: 300,
+    height: 230,
     resizable: false,
     webPreferences: {
       nodeIntegration: true,
@@ -15,7 +15,10 @@ const createWindow = () => {
   });
 
   win.loadFile("index.html");
-  ipcMain.on("loaded", (evt, data) => {});
+  // ipcMain.on("loaded", async(evt, data) => {
+  //   result = await python(data)
+  //   console.log(result)
+  // });
 
   ipcMain.on("set-vb", async (evt, data) => {
     // var py = require("child_process").execFile("./dist/set.exe", [data]);
