@@ -11,7 +11,7 @@ const createWindow = () => {
       nodeIntegration: true,
       contextIsolation: false,
     },
-    // autoHideMenuBar: true,
+    autoHideMenuBar: true,
   });
 
   win.loadFile("index.html");
@@ -43,8 +43,8 @@ app.on("window-all-closed", () => {
 
 const python = (input) => {
   return new Promise((resolve, reject) => {
-    // var py = require("child_process").execFile("./dist/set.exe", [input]);
-    var py = require("child_process").spawn("python", ["./py/set.py", input]);
+    var py = require("child_process").execFile("./dist/set.exe", [input]);
+    // var py = require("child_process").spawn("python", ["./py/set.py", input]);
     var result;
     py.stdout.on("data", (data) => {
       result = data.toString('utf8')

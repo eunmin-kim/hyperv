@@ -1,2 +1,7 @@
 .env
 /node_modules
+/py/build
+/py/dist
+/py/__pycache__
+/py/set.spec
+.gitignore
